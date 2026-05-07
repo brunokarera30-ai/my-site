@@ -2,39 +2,29 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #222;
+    text-align: center;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
-    height: 100vh;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+    padding: 80px 20px;
 }
 
-.hero h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
+.hero.small {
+    padding: 50px 20px;
 }
 
-.hero p {
-    font-size: 20px;
-    opacity: 0.9;
-}
-
+/* BUTTON */
 .btn {
+    display: inline-block;
     margin-top: 20px;
-    padding: 12px 25px;
+    padding: 12px 20px;
     background: #00c6ff;
     color: white;
     text-decoration: none;
-    border-radius: 25px;
-    transition: 0.3s;
+    border-radius: 20px;
 }
 
 .btn:hover {
@@ -43,53 +33,24 @@ body {
 
 /* SECTIONS */
 .section {
-    padding: 60px 20px;
-    text-align: center;
+    padding: 50px 20px;
 }
 
-.section.dark {
-    background: #f4f4f4;
-}
-
-.section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-/* IMAGE STYLE */
-.image {
-    width: 80%;
+/* IMAGES */
+img {
+    width: 90%;
     max-width: 600px;
     margin-top: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-
-/* GRID CARDS */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-    font-size: 18px;
 }
 
-/* FOOTER */
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-
-footer a {
-    color: #00c6ff;
-    text-decoration: none;
+/* CARDS */
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
